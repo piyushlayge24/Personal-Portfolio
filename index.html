@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- code for contacct from email -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "rXEb5edH4byG4lw_5",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+     <!-- code end for contact from email --> 
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Piyush</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#Skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <i class='bx bx-menu' id="menu"></i>
+    </header>
+    <section class="home" id="home">
+
+        <div class="text-content">
+            <h2>PIYUSH LAYGE</h2>
+            <h5>WEB & SOFTWARE DEVELOPER</h5>
+            <p>I’m a web and software developer with experience in building responsive websites and scalable applications. Skilled in front-end and back-end technologies, I focus on creating clean, efficient code and user-friendly digital experiences.</p>
+            <div class="social-media">
+                <a href="https://wa.me/9516851825" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="tel:+9516851825"><i class='bx bx-phone'></i></a>
+                <a href="https://instagram.com/mr_piyush_layge_"><i class='bx bxl-instagram'></i></a>
+            </div>
+          <a href="PIYUSH LAYGE05.pdf"><button class="btn">Downlaod C.V</button></a>
+        </div>
+        <div class="cover">
+            <div class="image"></div>
+            <div class="layout"></div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="image-cover">
+
+            <div class="img">
+                <h2>PIYUSH LAYGE</h2>
+                <h5>WEB & SOFTWARE DEVELOPER</h5>
+                <img src="profile1.jpg" alt="">
+            </div>
+        </div>
+        <div class="about-text">
+            <h3 class="title"><i class='bx bx-user'></i>ABOUT ME</h3>
+            <p>"Passionate about continuous learning and professional growth, I aim to apply my skills and knowledge in an environment that fosters success. Committed to staying updated with the latest development trends, I strive to deliver high-quality software solutions that meet both technical and user needs."</p>
+            <div class="social-media">
+                <a href="https://wa.me/9516851825" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="tel:+9516851825"><i class='bx bx-phone'></i></a>
+                <a href="https://instagram.com/mr_piyush_layge_"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="Skills" id="Skills">
+        <h3 class="title"><i class='bx bx-user'></i>SKILLS</h3>
+        <div class="skill-container">
+            <div class="skills-content">
+                <i class='bx bx-code-alt'></i>
+                <h5>Web Developer</h5>
+                <p style="text-align:justify;">A web developer is a professional who builds and maintains websites and web applications. They work with programming languages, tools, and frameworks to create user-friendly and functional online experiences.</p>
+                <p style="text-align: left;"><b>Technical Skills : </b><br> HTML5, CSS3, JavaScript (ES6+) <br> Responsive Design (Flexbox, Grid, Media Queries) <br> Front-End Frameworks:Angular (if applicable) <br> API Integration: REST, JSON <br> Package Managers: npm </p>
+            </div>
+            <div class="skills-content">
+                <i class='bx bx-signal-5'></i>
+                <h5>Software Developer</h5>
+                <p style="text-align: justify;">A software developer creates and maintains applications by writing code to solve problems and build solutions for various platforms.</p>
+                <p style="text-align: left;"><b>Technical Skills :</b> <br>Programming Languages: C#, Java, C++, JavaScript<br> Frameworks/Libraries:Angular, .NET <br> Databases: MySQL, PostgreSQL, SQLite <br> Version Control: Git, GitHub <br>Tools & Platforms:Azure <br>IDE/Editors: VS Code, Eclipse</p>
+            </div>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h3 class="title"><i class='bx bx-book-open'></i>EDUCATION</h3>
+        <div class="row">
+            <div class="column">
+                <div class="education-content">
+                    <div class="year"><i class='bx bx-time'></i>2020-2024</div>
+                    <h2>Thakur Shivkumarsingh Memorial Engineering College, Burhanpur </h2>
+                    <p>From this college i have completed my <b>Bachlor's degree</b> in <b>Computer Science and Engineering</b> with the percentage of <b>79.1% </b> . </p>
+                </div>
+                <div class="education-content">
+                    <div class="year"><i class='bx bx-time'></i>2019-2020</div>
+                    <h2>Shree Ganesh H. S. School, Burhanpur</h2>
+                    <p>From this school i have completed my <b>higher secondry</b> studies with the percentage of <b>66%</b> .</p>
+                </div>
+                <div class="education-content">
+                    <div class="year"><i class='bx bx-time'></i>2017-2018</div>
+                    <h2>Shree Ganesh H. S. School, Burhanpur</h2>
+                    <p>From this school i have completed my <b>senior secondry</b> studies with the percentage of <b>82%</b> .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="title"><i class='bx bx-headphone'></i>CONTACT ME</h2>
+        <form action="#" id="contact-form">
+            <div class="input-box">
+                <input type="text" required placeholder="Full Name">
+                <input type="email" required placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="tel" required placeholder="Mobile Number">
+                <input type="email" required placeholder="Subject For">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <footer>
+        <div class="text">
+            <p>Copyright @ 2025 by Piyush Layge</p>
+        </div>
+       <a href="#"> <i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+    <script>
+        const menubar = document.querySelector('#menu');
+const Navbar = document.querySelector('.navbar');
+menubar.onclick=()=>{
+    menubar.classList.toggle('bx-x');
+    Navbar.classList.toggle('active')
+}
+const section=document.querySelectorAll('section');
+const navlink = document.querySelectorAll('header nav a')
+window.onscroll = ()=>{
+    section.forEach(sec=>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id')
+        if(top>offset && top < offset + height){
+            sec.classList.add('start-animation');
+            navlink.forEach(links=>{
+                links.classList.remove('active')
+                document.querySelector('header nav a[href*='+id+']').classList.add('active')
+              
+            })
+        }
+    })
+    var header = document.querySelector('.header');
+    header.classList.toggle('sticky',window.scrollY>100)
+    menubar.classList.remove('bx-x');
+    Navbar.classList.remove('active')
+}
+</script>
+</body>
+
+</html>
